@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*incluir o preenchimento e a borda dentro da largura/altura total do elemento*/
+    text-decoration: none;
+}
+
+/*Definições gerais*/
+header{
+    position: relative;
+    height: 70px;
+}
+
+body {
+    font-family: 'Urbanist';
+}
+
+/*Definições Header*/
+div.header-conteudo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+
+span.linha{
+    position: absolute;
+    width: 70%;
+    height: 50%;
+    top: 45%;
+    border-top: 1px solid black;
+    z-index: 0;
+}
+
+span.conteudo-header {
+    color: #000;
+    font-size: 16px;
+    font-style: italic;
+    background-color: white; /* Opcional: define a cor de fundo para cobrir as linhas */
+    padding: 0 50px;
+    margin: 20px;
+    z-index: 1;
+}
