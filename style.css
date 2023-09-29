@@ -41,3 +41,15 @@ span.conteudo-header {
     margin: 20px;
     z-index: 1;
 }
+
+/*Definições navegação header*/
+nav.nav-container{
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.nav-item{
+    padding: 0px 30px 0px 30px;
+}
