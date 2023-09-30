@@ -8,7 +8,10 @@
 /*Definições gerais*/
 header{
     position: relative;
-    height: 70px;
+    height: 90px;
+    background-color: aquamarine;
+    position: fixed;
+    width: 100%; /*define o comprimento como 100% da página*/
 }
 
 body {
@@ -25,9 +28,8 @@ div.header-conteudo {
 
 span.linha{
     position: absolute;
-    width: 70%;
-    height: 50%;
-    top: 45%;
+    width: 45%;
+    top: 33%;
     border-top: 1px solid black;
     z-index: 0;
 }
@@ -44,7 +46,6 @@ span.conteudo-header {
 
 /*Definições navegação header*/
 nav.nav-container{
-    background-color: pink;
     display: flex;
     justify-content: center;
     align-items: center;
