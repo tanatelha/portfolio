@@ -15,7 +15,7 @@ header{
 }
 
 body {
-    font-family: 'Urbanist';
+    font-family: 'Urbanist', 'Roboto';
 }
 
 /*Definições Header*/
@@ -53,4 +53,5 @@ nav.nav-container{
 
 a.nav-item{
     padding: 0px 30px 0px 30px;
+    font-weight: 500;
 }
