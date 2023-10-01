@@ -5,17 +5,39 @@
     text-decoration: none;
 }
 
+/* Definindo cores como variáveis CSS */
+:root {
+    --cor-laranja: #FF6D62;
+    --cor-verde: #1fe09d;
+    --cor-amarelo: #FFC020;
+    --cor-roxo: #A258E0;
+    --cor-azul: #1BB7E5;
+    --cor-rosa: #F241A3;
+  }
+
+#laranja{background-color: var(--cor-laranja);}
+#verde{background-color: var(--cor-verde);}
+#amarelo{background-color: var(--cor-amarelo);}
+#roxo{background-color: var(--cor-roxo);}
+#rosa{background-color: var(--cor-rosa);}
+#azul{background-color: var(--cor-azul);}
+
+
 /*Definições gerais*/
 header{
     position: relative;
     height: 90px;
-    background-color: aquamarine;
     position: fixed;
     width: 100%; /*define o comprimento como 100% da página*/
+    left: 50%;
+    /*desloca o elemento horizontalmente em -50% do seu próprio tamanho*/
+    transform: translateX(-50%);
+    top: 0;
+    z-index: 9999; 
 }
 
 body {
-    font-family: 'Urbanist', 'Roboto';
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 /*Definições Header*/
@@ -28,7 +50,7 @@ div.header-conteudo {
 
 span.linha{
     position: absolute;
-    width: 45%;
+    width: 55%;
     top: 33%;
     border-top: 1px solid black;
     z-index: 0;
@@ -36,7 +58,7 @@ span.linha{
 
 span.conteudo-header {
     color: #000;
-    font-size: 16px;
+    font-size: 14px;
     font-style: italic;
     background-color: white; /* Opcional: define a cor de fundo para cobrir as linhas */
     padding: 0 50px;
@@ -48,10 +70,55 @@ span.conteudo-header {
 nav.nav-container{
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 10px;
 }
 
 a.nav-item{
-    padding: 0px 30px 0px 30px;
+    padding: 0px 50px 0px 50px;
     font-weight: 500;
+    font-size: 15px;
+}
+
+/*Definições section Apresentação*/
+section.apresentacao {
+    margin-top: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 250px;
+    margin: 30px;
+}
+
+div.apresentacao-conteudo{
+    margin: 30px;
+    width: 35%;
+}
+
+div.apresentacao-titulo{
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+div.apresentacao-topicos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+
+div.topico{
+    margin-right: 15px;
+    margin-bottom: 15px;
+    /*padding: valor-cima valor-direita valor-baixo valor-esquerda;*/
+    padding: 8px 15px 8px 15px;
+    font-size: 14px;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
 }
