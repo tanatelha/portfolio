@@ -33,7 +33,10 @@ header{
     /*desloca o elemento horizontalmente em -50% do seu próprio tamanho*/
     transform: translateX(-50%);
     top: 0;
-    z-index: 9999; 
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo com opacidade */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px); /* Prefixo do fornecedor para navegadores baseados em WebKit (como o Safari) */
 }
 
 body {
@@ -60,7 +63,6 @@ span.conteudo-header {
     color: #000;
     font-size: 14px;
     font-style: italic;
-    background-color: white; /* Opcional: define a cor de fundo para cobrir as linhas */
     padding: 0 50px;
     margin: 20px;
     z-index: 1;
@@ -81,11 +83,12 @@ a.nav-item{
 
 /*Definições section Apresentação*/
 section.apresentacao {
-    margin-top: 150px;
+    margin-top: 80px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    height: 700px;
 }
 
 img {
@@ -121,4 +124,43 @@ div.topico{
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+/*Definições da section Sobre*/
+
+section.sobre{
+    height: 700px;
+    background-color: powderblue;
+    position: relative;
+}
+
+div.linha-sobre{
+    width: 15%;
+    height: 2px; /* Altura da linha */
+    margin-left: 20%;
+}
+
+div.sobre-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    width: 50%;
+}
+
+div.sobre-conteudo-texto{
+    width: 50%;
+    height: 50%;
+    background-color: var(--cor-verde);
+}
+
+div.sobre-conteudo-fotos{
+    display: flex;
+    flex-direction: row;
+}
+
+img.foto-redonda-sobre{
+    width: 150px;
+    border-radius: 50%;
 }
