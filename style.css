@@ -129,7 +129,6 @@ div.topico{
 /*Definições da section Sobre*/
 
 section.sobre{
-    background-color: powderblue;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -140,7 +139,7 @@ section.sobre{
 div.linha-sobre{
     width: 15%;
     height: 2px; /* Altura da linha */
-    margin-left: 20%;
+    margin-left: 25%;
 }
 
 div.sobre-conteudo{
@@ -152,14 +151,13 @@ div.sobre-conteudo{
 }
 
 div.sobre-conteudo-texto{
-    background-color: var(--cor-verde);
     width: 50%;
 }
 
 div.sobre-conteudo-fotos{
     display: flex;
-    flex-direction: row;
-    background-color: yellowgreen;
+    flex-direction: column;
+    margin-left: 50px;
 }
 
 img.foto-redonda-sobre{
@@ -176,4 +174,11 @@ p.titulo{
 p.texto{
     margin: 20px;
     line-height: 20px;
+}
+
+p.descricao-foto{
+    width: 90;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 7px;
 }
