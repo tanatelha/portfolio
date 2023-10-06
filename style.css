@@ -8,8 +8,8 @@
 /* Definindo cores como variáveis CSS */
 :root {
     --cor-laranja: #FF6D62;
-    --cor-verde: #1fe09d;
-    --cor-amarelo: #FFC020;
+    --cor-verde: #12df97;
+    --cor-amarelo: #fab508;
     --cor-roxo: #A258E0;
     --cor-azul: #1BB7E5;
     --cor-rosa: #F241A3;
@@ -92,7 +92,7 @@ section.apresentacao {
 }
 
 img {
-    width: 250px;
+    width: 320px;
     margin: 30px;
 }
 
@@ -104,13 +104,14 @@ div.apresentacao-conteudo{
 div.apresentacao-titulo{
     font-weight: bold;
     margin-bottom: 20px;
-    font-size: 16px;
+    font-size: 20px;
 }
 
 div.apresentacao-topicos{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    width: 100%;
     
 }
 
@@ -119,7 +120,7 @@ div.topico{
     margin-bottom: 15px;
     /*padding: valor-cima valor-direita valor-baixo valor-esquerda;*/
     padding: 8px 15px 8px 15px;
-    font-size: 14px;
+    font-size: 16px;
     border-radius: 50px;
     color: white;
     font-weight: 600;
@@ -151,7 +152,7 @@ div.sobre-conteudo{
 }
 
 div.sobre-conteudo-texto{
-    width: 50%;
+    width: 55%;
 }
 
 div.sobre-conteudo-fotos{
