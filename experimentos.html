@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio da Natália</title>
     <link rel="stylesheet" href="experimentos-style.css" /></head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 <header class="header">
     <div class="retorno">
         <a>voltar portfólio</a> 
@@ -15,7 +16,33 @@
     </div>
 </header>
 <body>
+    <div class="para-interagir">
+        <div> 
+            <span class="intertitulo">para interagir</span>
+        </div>
+        <swiper-container navigation="true" pagination="true" scrollbar="true">
+            <swiper-slide>
+                <div class="box-carrossel">
+                <img class="imagem-experimento" src="rosa.png">
+                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="box-carrossel">
+                <img class="imagem-experimento" src="verde.png">
+                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
+            </swiper-slide>
+            <swiper-slide class="box-carrossel">
+                <img class="imagem-experimento" src="amarelo.png">
+                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
+            </swiper-slide>
+            <swiper-slide class="box-carrossel">
+                <img class="imagem-experimento" src="roxo.png">
+                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
+            </swiper-slide>
+        </swiper-container>
+    </div>
 
-<script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="script-experimentos.js"></script>
 </body>
 </html>
