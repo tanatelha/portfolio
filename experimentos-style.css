@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /*incluir o preenchimento e a borda dentro da largura/altura total do elemento*/
+    text-decoration: none;
+}
+
+/* Definindo cores como variáveis CSS */
+:root {
+    --cor-laranja: #FF6D62;
+    --cor-verde: #12df97;
+    --cor-amarelo: #fab508;
+    --cor-roxo: #A258E0;
+    --cor-azul: #1BB7E5;
+    --cor-rosa: #F241A3;
+  }
+
+#laranja{background-color: var(--cor-laranja);}
+#verde{background-color: var(--cor-verde);}
+#amarelo{background-color: var(--cor-amarelo);}
+#roxo{background-color: var(--cor-roxo);}
+#rosa{background-color: var(--cor-rosa);}
+#azul{background-color: var(--cor-azul);}
+
+html{
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+a, span{
+    color: white;
+}
+
+div.retorno{
+    float: right;
+    margin: 1rem;
+    width: 4rem;
+}
+
+div.header-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    width: 320px;
+    margin: 30px;
+}
+
+.titulo{
+    font-weight: 600;
+    font-size: 1.6rem;
+    border-bottom: 2px solid white;
+}
