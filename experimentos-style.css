@@ -122,3 +122,20 @@ swiper-slide {
     object-fit: fill; /* Redimensiona a imagem para preencher o swiper-slide */
     border-radius: 20px;
 }
+
+
+@media (max-width: 990px) {
+    swiper-container{
+        margin: 1rem auto;
+        margin-left: 5rem;
+        margin-right: 5rem;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+}
+
+
+@media (max-width: 400px) {
+    swiper-container{
+        margin: 1rem auto;
+    }
+}
