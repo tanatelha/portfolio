@@ -31,6 +31,11 @@ a, span{
     color: white;
 }
 
+img.imagem-header {
+    width: 320px;
+    margin: 30px;
+}
+
 div.retorno{
     float: right;
     margin: 1rem;
@@ -45,16 +50,22 @@ div.header-conteudo{
     margin: 1rem auto;
 }
 
-img {
-    width: 320px;
-    margin: 30px;
-}
-
 .titulo{
     font-weight: 600;
     font-size: 1.6rem;
     border-bottom: 2px solid white;
+}
+
+.intertitulo-header {
+    color: white;
+    margin: 1rem;
+    padding: 0.5rem;
+    font-style: italic;
+    font-size: 1.0rem;
     margin-bottom: 5rem;
+    width: 40%;
+    line-height: 1.4rem;
+    text-align: center;
 }
 
 .intertitulo {
@@ -67,29 +78,47 @@ img {
     border-bottom: 2px solid white;
 }
 
+.bloco{
+    margin: 1rem 0rem 4rem 0rem;
+}
+
 swiper-container{
-    margin-top: 2rem;
-    color: white;
-    display: inline;
-    background-color: #fab508;
+    margin: 1rem auto;
+    margin-left: 7rem;
+    margin-right: 7rem;
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+swiper-slide {
+    padding: 8px;
+    transition: transform 0.6s;
+  }
+
+  swiper-slide:hover {
+    transform: scale(1.05);
+  }
+
+  .card {
+    height: 200px;
+    border-radius: 8px;
     display: flex;
-    justify-content: row;
-}
-
-.imagem-experimento{
-    width: 300px;
-    height: 300px;
-    margin: 1rem;
-}
-
-.box-carrossel{
-    margin-left: 9rem;
-    border: 1px solid white;
-    width: 335px;
+    justify-content: center;
     align-items: center;
-}
+  }
 
-p.legenda-experimento{
-    font-size: 1.0rem;
-    padding: 1rem;
+  swiper-container::part(button-next),
+  swiper-container::part(button-prev) {
+    background: #f7f7f780;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    padding: 16px;
+    color: white;
+  }
+
+  img.imagem-experimento{
+    height: 200px;
+    width: 100%;
+    object-fit: fill; /* Redimensiona a imagem para preencher o swiper-slide */
+    border-radius: 20px;
 }

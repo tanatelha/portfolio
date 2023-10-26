@@ -4,45 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio da Natália</title>
-    <link rel="stylesheet" href="experimentos-style.css" /></head>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="experimentos-style.css" />
+</head>
+
 <header class="header">
-    <div class="retorno">
-        <a>voltar portfólio</a> 
-    </div>
     <div class="header-conteudo">
-        <img src="header_experimentos.jpg">
+        <img class="imagem-header" src="header_experimentos.jpg">
         <span class="titulo">experimentos</span>
+        <span class="intertitulo-header">nada é tão nosso quanto os nossos próprios sonhos, ainda mais aqueles que aparecem quanto estamos com a cabeça no travesseiro e que viram projetos experimentais. explore essa página e deixe a criatividade fluir.</span>
     </div>
 </header>
 <body>
-    <div class="para-interagir">
-        <div> 
-            <span class="intertitulo">para interagir</span>
-        </div>
-        <swiper-container navigation="true" pagination="true" scrollbar="true">
+    <div class="bloco">
+        <span class="intertitulo">para interagir</span>
+        <swiper-container slides-per-view="2.5" navigation="true" space-between="16">
+            <swiper-slide class="custom-slide">
+                <div class="card">
+                    <img class="imagem-experimento" src="rosa.png">
+                  </div>
+            </swiper-slide>
             <swiper-slide>
-                <div class="box-carrossel">
-                <img class="imagem-experimento" src="rosa.png">
-                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
-                </div>
-            </swiper-slide>
-            <swiper-slide class="box-carrossel">
                 <img class="imagem-experimento" src="verde.png">
-                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
             </swiper-slide>
-            <swiper-slide class="box-carrossel">
+            <swiper-slide>
+                <img class="imagem-experimento" src="azul.png">
+            </swiper-slide>
+            <swiper-slide>
                 <img class="imagem-experimento" src="amarelo.png">
-                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
             </swiper-slide>
-            <swiper-slide class="box-carrossel">
+            <swiper-slide>
                 <img class="imagem-experimento" src="roxo.png">
-                <p class="legenda-experimento">texto sobre o experimento texto sobre o experimento texto sobre o experimento texto sobre o experimento</p>
             </swiper-slide>
-        </swiper-container>
+          </swiper-container>
     </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <div class="bloco">
+        <span class="intertitulo">para se divertir</span>
+        <swiper-container slides-per-view="2.5" navigation="true" space-between="16">
+            <swiper-slide class="custom-slide">
+                <div class="card">
+                    <img class="imagem-experimento" src="rosa.png">
+                  </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="verde.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="azul.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="amarelo.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="roxo.png">
+            </swiper-slide>
+          </swiper-container>
+    </div>
+    <div class="bloco">
+        <span class="intertitulo">para facilitar a vida</span>
+        <swiper-container slides-per-view="2.5" navigation="true" space-between="16">
+            <swiper-slide class="custom-slide">
+                <div class="card">
+                    <img class="imagem-experimento" src="rosa.png">
+                  </div>
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="verde.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="azul.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="amarelo.png">
+            </swiper-slide>
+            <swiper-slide>
+                <img class="imagem-experimento" src="roxo.png">
+            </swiper-slide>
+          </swiper-container>
+    </div>
+    
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
 <script src="script-experimentos.js"></script>
 </body>
 </html>
