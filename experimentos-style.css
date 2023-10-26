@@ -134,7 +134,67 @@ swiper-slide {
 }
 
 
-@media (max-width: 400px) {
+@media (max-width: 768px) {
+    .titulo{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .intertitulo-header {
+        color: white;
+        margin: 0.5rem;
+        padding: 0.3rem;
+        font-style: italic;
+        font-size: 0.8rem;
+        margin-bottom: 5rem;
+        width: 55%;
+        line-height: 1.0rem;
+        text-align: center;
+    }
+
+    .intertitulo {
+        color: white;
+        margin: 3rem;
+        padding: 0.3rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border-bottom: 2px solid white;
+    }
+
+    swiper-container{
+        margin: 1rem auto;
+    }
+}
+
+
+@media (max-width: 415px) {
+    .titulo{
+        font-weight: 600;
+        font-size: 1.2rem;
+    }
+
+    .intertitulo-header {
+        color: white;
+        margin: 0.5rem;
+        padding: 0.3rem;
+        font-style: italic;
+        font-size: 0.8rem;
+        margin-bottom: 5rem;
+        width: 70%;
+        line-height: 1.0rem;
+        text-align: center;
+    }
+
+    .intertitulo {
+        color: white;
+        margin: 2rem;
+        margin-bottom: 2rem;
+        padding: 0.3rem;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border-bottom: 2px solid white;
+    }
+
     swiper-container{
         margin: 1rem auto;
     }
