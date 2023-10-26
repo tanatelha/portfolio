@@ -27,6 +27,10 @@ html{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+header{
+    position: relative;
+}
+
 a, span{
     color: white;
 }
@@ -38,9 +42,18 @@ img.imagem-header {
 
 div.retorno{
     float: right;
-    margin: 1rem;
+    margin: 1rem 1rem 1rem 2rem;
     width: 4rem;
+    position: absolute;
+    font-size: 0.8rem;
+    font-style: italic;
+    padding: 0rem 0rem 0.5rem 0rem;
+    transition: 0.5s ease;
 }
+
+div.retorno:hover {
+    border-bottom: 2px solid white;
+  }
 
 div.header-conteudo{
     display: flex;
@@ -122,6 +135,40 @@ swiper-slide {
     object-fit: fill; /* Redimensiona a imagem para preencher o swiper-slide */
     border-radius: 20px;
 }
+
+
+div.informacoes-experimento{
+    position: absolute;
+    height: 90px;
+    width: 80%;
+    border-radius: 20px;
+    background-color: rgba(251, 251, 251, 0.856);
+    z-index: 5;
+    opacity: 1;
+    top: 45%;
+    transform: translateY(90%);
+    backdrop-filter: blur(8px);
+    text-align: center;
+    transition: 0.4s ease;
+}
+
+div.informacoes-experimento:hover{
+    top: 30%;
+}
+
+a.link-experimento{
+    color: black;
+    font-size: 0.7rem;
+    font-weight: 600;
+
+}
+
+p.legenda{
+    color: black;
+    font-size: 0.7rem;
+    padding: 0.7rem 0.7rem 0.2rem 0.7rem;
+}
+
 
 
 @media (max-width: 990px) {
