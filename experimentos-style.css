@@ -108,15 +108,16 @@ swiper-slide {
   }
 
   swiper-slide:hover {
-    transform: scale(1.05);
+    transform: scale(1.03);
   }
 
   .card {
-    height: 200px;
+    height: 210px;
     border-radius: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
   }
 
   swiper-container::part(button-next),
@@ -130,43 +131,49 @@ swiper-slide {
   }
 
   img.imagem-experimento{
-    height: 200px;
+    position: absolute;
     width: 100%;
-    object-fit: fill; /* Redimensiona a imagem para preencher o swiper-slide */
+    height: 95%;
+    object-fit: cover;
     border-radius: 20px;
+    top: 0%;
 }
 
 
 div.informacoes-experimento{
     position: absolute;
-    height: 90px;
+    height: 100px;
     width: 80%;
-    border-radius: 20px;
+    border-radius: 10px;
     background-color: rgba(251, 251, 251, 0.856);
     z-index: 5;
     opacity: 1;
-    top: 45%;
+    top: 57%;
     transform: translateY(90%);
     backdrop-filter: blur(8px);
     text-align: center;
     transition: 0.4s ease;
+
 }
 
 div.informacoes-experimento:hover{
-    top: 30%;
+    top: 20%;
 }
 
 a.link-experimento{
     color: black;
     font-size: 0.7rem;
     font-weight: 600;
-
 }
+
+a.link-experimento:hover {
+    border-bottom: 2px solid black;
+  }
 
 p.legenda{
     color: black;
     font-size: 0.7rem;
-    padding: 0.7rem 0.7rem 0.2rem 0.7rem;
+    padding: 1.2rem 0.7rem 0.2rem 0.7rem;
 }
 
 
