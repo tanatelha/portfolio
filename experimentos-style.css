@@ -176,6 +176,17 @@ p.legenda{
     padding: 1.2rem 0.7rem 0.2rem 0.7rem;
 }
 
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+p.footer-conteudo{
+    color: white;
+    font-size: 0.7rem;
+    border-top: 1.5px solid white;
+    padding: 1.2rem;
+}
 
 
 @media (max-width: 990px) {
@@ -253,3 +264,5 @@ p.legenda{
         margin: 1rem auto;
     }
 }
+
+
