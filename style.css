@@ -182,6 +182,7 @@ section.reportagem{
     background-color: #1BB7E5;
 }
 
+
 div.reportagem-indice{
     background-color: pink;
 }
@@ -189,13 +190,14 @@ div.reportagem-indice{
 div.indices{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 span.indice{
     display: inline-block;
     margin: 5px;
     /*padding: valor-cima valor-direita valor-baixo valor-esquerda;*/
-    padding: 6px 0px 6px 10px;
+    padding: 6px 10px 6px 10px;
     font-size: 1rem;
     border-radius: 50px;
     color: white;
