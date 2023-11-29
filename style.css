@@ -22,18 +22,26 @@
 #rosa{background-color: var(--cor-rosa);}
 #azul{background-color: var(--cor-azul);}
 
+html{
+    /*a cada 1 rem, será considerado 10px*/
+    font-size: 62.5%;
+    /*font-family: Georgia, 'Times New Roman', Times, serif;*/
+}
 
 /*Definições gerais*/
 header{
-    position: relative;
-    height: 90px;
-    position: fixed;
-    width: 100%; /*define o comprimento como 100% da página*/
-    left: 50%;
-    /*desloca o elemento horizontalmente em -50% do seu próprio tamanho*/
-    transform: translateX(-50%);
     top: 0;
+    left: 50%;
+  /*desloca o elemento horizontalmente em -50% do seu próprio tamanho*/
+    transform: translateX(-50%);
     z-index: 9999;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo com opacidade */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Prefixo do fornecedor para navegadores baseados em WebKit (como o Safari) */
@@ -48,37 +56,40 @@ div.header-conteudo {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    text-align: center;
+    align-items: center;
+    max-width: 100%; /*define o comprimento como 100% da página*/    
 }
 
 span.linha{
     position: absolute;
     width: 55%;
-    top: 33%;
+    margin: 11px 0px 15px 0px;
     border-top: 1px solid black;
     z-index: 0;
 }
 
 span.conteudo-header {
     color: #000;
-    font-size: 14px;
+    font-size: 1.4rem;
     font-style: italic;
     padding: 0 50px;
-    margin: 20px;
+    margin: 10px 0px 15px 0px;
     z-index: 1;
+
 }
 
 /*Definições navegação header*/
 nav.nav-container{
     display: flex;
+    align-items: center;
     justify-content: center;
-    margin-top: 10px;
+    width: 70%;
 }
 
 a.nav-item{
-    padding: 0px 50px 0px 50px;
+    padding: 0px 20px 0px 20px;
     font-weight: 500;
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 /*Definições section Apresentação*/
@@ -137,14 +148,8 @@ section.sobre{
     margin: 30px;
 }
 
-div.linha-sobre{
-    width: 15%;
-    height: 2px; /* Altura da linha */
-    margin-left: 25%;
-}
-
 div.sobre-conteudo{
-    width: 60%;
+    width: 70%;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -166,15 +171,56 @@ img.foto-redonda-sobre{
     border-radius: 50%;
 }
 
+
+/*section da reportagem*/
+section.reportagem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 30px;
+    background-color: #1BB7E5;
+}
+
+div.reportagem-indice{
+    background-color: pink;
+}
+
+div.indices{
+    display: flex;
+    flex-direction: column;
+}
+
+span.indice{
+    display: inline-block;
+    margin: 5px;
+    /*padding: valor-cima valor-direita valor-baixo valor-esquerda;*/
+    padding: 6px 0px 6px 10px;
+    font-size: 1rem;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/*infos de texto*/
 p.titulo{
     font-weight: bold;
-    font-size: 22px;
+    font-size: 2.2rem;
     margin: 10px;
 }
 
 p.texto{
     margin: 20px;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+p.intertitulo{
+    font-size: 1.5rem;
+    font-style: italic;
+    width: 25rem;
+    margin: 20px;
 }
 
 p.descricao-foto{
@@ -182,4 +228,10 @@ p.descricao-foto{
     font-size: 14px;
     border-radius: 10px;
     padding: 7px;
+}
+
+div.linha-sobre{
+    width: 15%;
+    height: 2px; /* Altura da linha */
+    margin-left: 25%;
 }
