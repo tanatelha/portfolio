@@ -94,12 +94,12 @@ a.nav-item{
 
 /*Definições section Apresentação*/
 section.apresentacao {
-    margin-top: 80px;
+    margin-top: 50px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 650px;
 }
 
 img {
@@ -132,7 +132,7 @@ div.topico{
     /*padding: valor-cima valor-direita valor-baixo valor-esquerda;*/
     padding: 8px 15px 8px 15px;
     font-size: 16px;
-    border-radius: 50px;
+    border-radius: 10px;
     color: white;
     font-weight: 600;
     letter-spacing: 1px;
@@ -188,6 +188,7 @@ section.reportagem{
     justify-content: space-around;
     align-items: center;
     width: 70%;
+    margin-bottom: 30px;
 }
 
 .item{
@@ -233,6 +234,36 @@ a.texto-link{
     color: black;
     border-bottom: 2px dotted black;
 }
+
+/*section projetos*/
+section.projetos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
+
+.projeto-conteudo{
+    display: flex;
+    justify-content: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.projeto-item{
+    width: 25rem;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.projeto-descricao{
+
+}
+
+
 /*infos de texto*/
 p.titulo{
     font-weight: bold;
@@ -279,6 +310,7 @@ div.linha-separacao{
     width: 25rem;
     font-weight: 600;
     padding: 15px 0px;
+    line-height: 1.9rem;
 }
 
 .fonte-contem{
@@ -289,4 +321,19 @@ div.linha-separacao{
 
 span.negrito{
     font-weight: bold;
+}
+
+.fonte-item-titulo{
+    font-size: 1.7rem;
+    font-weight: 600;
+    border-bottom: 1px solid black;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1.0rem;
+    text-align: center;
+}
+
+.fonte-titulo-descricao{
+    font-size: 1.5rem;
+    line-height: 2.0rem;
+    margin-bottom: 1.5rem;
 }
