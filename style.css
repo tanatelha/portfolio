@@ -299,6 +299,18 @@ section.contatos{
     margin-bottom: 70px;
 }
 
+/*conteudo do fotter*/
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+p.footer-conteudo{
+    font-size: 1.2rem;
+    font-weight: 300;
+    border-top: 1.5px solid rgb(184, 184, 184);
+    padding: 1.5rem;
+}
 
 
 /*infos de texto*/
@@ -332,7 +344,7 @@ p.descricao-foto{
 }
 
 div.linha-separacao{
-    width: 15%;
+    width: 30%;
     height: 3px; /* Altura da linha */
     margin: 20px auto 40px auto;
 
