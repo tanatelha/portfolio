@@ -41,7 +41,7 @@ header{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 7rem;
+    height: 8rem;
     background-color: rgba(255, 255, 255, 0.8); /* Fundo com opacidade */
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px); /* Prefixo do fornecedor para navegadores baseados em WebKit (como o Safari) */
@@ -63,8 +63,8 @@ div.header-conteudo {
 span.linha{
     position: absolute;
     width: 55%;
-    margin: 11px 0px 15px 0px;
-    border-top: 1px solid black;
+    margin: 1.5rem 0rem 0rem 0rem;
+    border-top: 0.1rem solid black;
     z-index: 0;
 }
 
@@ -72,8 +72,7 @@ span.conteudo-header {
     color: #000;
     font-size: 1.4rem;
     font-style: italic;
-    padding: 0 50px;
-    margin: 10px 0px 15px 0px;
+    padding: 0rem 0rem 2rem 0rem;
     z-index: 1;
 
 }
@@ -87,29 +86,55 @@ nav.nav-container{
 }
 
 a.nav-item{
-    padding: 0px 20px 0px 20px;
+    padding: 0rem 2rem 0rem 2rem;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
 /*Definições section Apresentação*/
 section.apresentacao {
-    margin-top: 50px;
+    margin: 10rem;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 650px;
+    height: 500px;
+}
+
+.apresentacao-conteudo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.apresentacao-conteudo-linha{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+p.topico{
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 img {
-    width: 320px;
-    margin: 30px;
+    width: 450px;
 }
 
 div.apresentacao-conteudo{
-    margin: 30px;
-    width: 35%;
+    margin: 50px;
+    width: 50%;
+}
+
+
+.bola-conteudo-tipo-2{
+    width: 1.7rem;
+    height: 1.6rem;
+    border-radius: 50%;
+    margin: 1rem 1rem 1rem 1rem;
 }
 
 div.apresentacao-titulo{
@@ -188,7 +213,7 @@ section.reportagem{
     justify-content: space-around;
     align-items: center;
     width: 70%;
-    margin-bottom: 30px;
+    margin: 30px;
 }
 
 .item{
@@ -255,9 +280,6 @@ section.projetos{
     margin: 20px;
 }
 
-.projeto-descricao{
-
-}
 
 /*section experimentos*/
 section.experimentos{
@@ -283,7 +305,7 @@ section.contatos{
 p.titulo{
     font-weight: bold;
     font-size: 2.2rem;
-    margin: 10px;
+    margin: 10px 10px 10px 10px;
 }
 
 p.texto{
@@ -315,7 +337,8 @@ div.linha-separacao{
 
 .fonte-veiculo{
     width: 20rem;
-    padding: 5px 0px;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 1rem 0rem;
     font-style: italic;
     border-bottom: 1px solid black;
 }
