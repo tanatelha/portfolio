@@ -308,17 +308,20 @@ p.titulo{
     margin: 10px 10px 10px 10px;
 }
 
-p.texto{
+.texto{
     margin: 20px;
     font-size: 1.5rem;
     line-height: 2rem;
+    text-decoration: none;
 }
 
-p.intertitulo{
+.intertitulo{
     font-size: 1.5rem;
-    font-style: italic;
+    font-weight: bold;
     width: 25rem;
     margin: 20px;
+    border-bottom: 2px dotted black;
+    padding: 1rem 0rem 0.7rem 0rem;
 }
 
 p.descricao-foto{
