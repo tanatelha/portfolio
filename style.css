@@ -229,11 +229,7 @@ img.imagem-reportagem{
     margin: 5px 5px 15px 0px;
 }
 
-a.texto-link{
-    text-decoration: none;
-    color: black;
-    border-bottom: 2px dotted black;
-}
+
 
 /*section projetos*/
 section.projetos{
@@ -262,6 +258,25 @@ section.projetos{
 .projeto-descricao{
 
 }
+
+/*section experimentos*/
+section.experimentos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
+/*section contatoss*/
+section.contatos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 70px;
+}
+
 
 
 /*infos de texto*/
@@ -336,4 +351,18 @@ span.negrito{
     font-size: 1.5rem;
     line-height: 2.0rem;
     margin-bottom: 1.5rem;
+}
+
+a.texto-link{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px dotted black;
+}
+
+.texto-tipo-2{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px dotted black;
+    margin: 10px;
 }
