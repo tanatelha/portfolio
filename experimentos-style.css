@@ -42,7 +42,7 @@ img.imagem-header {
 
 div.retorno{
     float: right;
-    margin: 1rem 1rem 1rem 2rem;
+    margin: 0.5rem 0.5rem 0.5rem 2rem;
     width: 4rem;
     position: absolute;
     font-size: 0.8rem;
@@ -90,6 +90,8 @@ div.header-conteudo{
     font-size: 1.2rem;
     border-bottom: 2px solid white;
 }
+
+
 
 .bloco{
     margin: 1rem 0rem 4rem 0rem;
@@ -226,9 +228,14 @@ p.footer-conteudo{
         border-bottom: 2px solid white;
     }
 
+    .texto-voltar{
+        font-size: 0.6rem;
+    }
+
     swiper-container{
         margin: 1rem auto;
     }
+
 }
 
 
@@ -262,6 +269,22 @@ p.footer-conteudo{
 
     swiper-container{
         margin: 1rem auto;
+    }
+
+    swiper-slide {
+        padding: 5px;
+        transition: transform 0.6s;
+      }
+
+    p.legenda{
+        color: black;
+        font-size: 0.5rem;
+        padding: 10px 5px 3px 5px;
+        margin: 0px;
+    }
+
+    a.link-experimento{
+        font-size: 0.5rem;
     }
 }
 
