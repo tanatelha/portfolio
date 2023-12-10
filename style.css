@@ -30,13 +30,14 @@ html{
 
 /*Definições gerais*/
 header{
-    top: 0;
+    /*top: 0;
     left: 50%;
-  /*desloca o elemento horizontalmente em -50% do seu próprio tamanho*/
+    desloca o elemento horizontalmente em -50% do seu próprio tamanho
     transform: translateX(-50%);
     z-index: 9999;
-    position: fixed;
-    width: 100%;
+    position: fixed;*/
+    margin-bottom: 10px;
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -62,6 +63,7 @@ div.header-conteudo {
 
 span.linha{
     position: absolute;
+    max-width: 70%;
     width: 55%;
     margin: 1.5rem 0rem 0rem 0rem;
     border-top: 0.1rem solid black;
@@ -83,22 +85,26 @@ nav.nav-container{
     align-items: center;
     justify-content: center;
     width: 70%;
+    
 }
+
 
 a.nav-item{
     padding: 0rem 2rem 0rem 2rem;
     font-weight: 500;
     font-size: 1.5rem;
+    text-decoration: none;
+    color: black;
 }
 
 /*Definições section Apresentação*/
 section.apresentacao {
-    margin: 10rem;
+    margin-top: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 450px;
 }
 
 .apresentacao-conteudo{
@@ -117,18 +123,18 @@ section.apresentacao {
 
 p.topico{
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 200;
+    text-align: center
 }
 
 img {
-    width: 450px;
+    max-width: 450px;
 }
 
 div.apresentacao-conteudo{
     margin: 50px;
     width: 50%;
 }
-
 
 .bola-conteudo-tipo-2{
     width: 1.7rem;
@@ -137,31 +143,7 @@ div.apresentacao-conteudo{
     margin: 1rem 1rem 1rem 1rem;
 }
 
-div.apresentacao-titulo{
-    font-weight: bold;
-    margin-bottom: 20px;
-    font-size: 20px;
-}
 
-div.apresentacao-topicos{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    
-}
-
-div.topico{
-    margin-right: 15px;
-    margin-bottom: 15px;
-    /*padding: valor-cima valor-direita valor-baixo valor-esquerda;*/
-    padding: 8px 15px 8px 15px;
-    font-size: 16px;
-    border-radius: 10px;
-    color: white;
-    font-weight: 600;
-    letter-spacing: 1px;
-}
 
 /*Definições da section Sobre*/
 
@@ -185,16 +167,6 @@ div.sobre-conteudo-texto{
     width: 55%;
 }
 
-div.sobre-conteudo-fotos{
-    display: flex;
-    flex-direction: column;
-    margin-left: 50px;
-}
-
-img.foto-redonda-sobre{
-    width: 150px;
-    border-radius: 50%;
-}
 
 
 /*section da reportagem*/
@@ -270,6 +242,7 @@ section.projetos{
     justify-content: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 5rem;
 }
 
 .projeto-item{
@@ -403,4 +376,93 @@ a.texto-link{
     color: black;
     border-bottom: 2px dotted black;
     margin: 10px;
+}
+
+
+@media (max-width: 520px) {
+    html{
+        font-size: 55%;
+    }
+
+    span.linha{
+        width: 65%;
+    }
+    
+    nav.nav-container{
+        width: 90%;
+    }
+    
+    a.nav-item{
+        padding: 0rem 0.7rem 0rem 0.7rem;
+    }
+    
+    section.apresentacao {
+        height: 350px;
+    }
+
+    img {
+        max-width: 350px;
+    }
+    
+    div.apresentacao-conteudo{
+        width: 70%;
+    }
+
+    div.apresentacao-conteudo-linha{
+        padding: 1rem;
+    }
+
+    .bola-conteudo-tipo-2{
+        margin: 1rem;
+        width: 2rem;
+        height: 1.4rem;
+
+    }
+    
+    /*Definições da section Sobre*/
+  
+    div.sobre-conteudo-texto{
+        width: 120%;
+    }
+    
+    /*section da reportagem*/
+    .reportagem-conteudo{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin: 3rem;
+        justify-content: space-between;
+    }
+
+    .item{
+        flex-basis: 35%; /* Define a largura inicial de 50% para cada item */
+        max-width: 35%; /* Define a largura máxima de 50% para cada item */
+        box-sizing: border-box; /* Inclui a largura da borda e o preenchimento no cálculo da largura */
+        /* Outros estilos para os itens */
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-bottom: 5rem;
+    }
+
+    /*section projetos*/
+  
+/*section projetos*/
+    .projeto-conteudo{
+        margin-top: 2rem;
+    }
+
+    .projeto-item{
+        width: 20rem;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    section.contatos{
+        margin: auto 50px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+
 }
