@@ -247,6 +247,7 @@ section.projetos{
 
 .projeto-item{
     width: 25rem;
+
     border: 1px solid black;
     padding: 10px;
     border-radius: 5px;
@@ -356,6 +357,7 @@ span.negrito{
     margin-bottom: 1.5rem;
     padding-bottom: 1.0rem;
     text-align: center;
+    line-height: 2.5rem;
 }
 
 .fonte-titulo-descricao{
@@ -381,7 +383,7 @@ a.texto-link{
 
 @media (max-width: 520px) {
     html{
-        font-size: 55%;
+        font-size: 40%;
     }
 
     span.linha{
@@ -401,7 +403,7 @@ a.texto-link{
     }
 
     img {
-        max-width: 350px;
+        max-width: 300px;
     }
     
     div.apresentacao-conteudo{
