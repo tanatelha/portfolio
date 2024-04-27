@@ -8,14 +8,15 @@
 /* Definindo cores como variáveis CSS */
 :root {
     --cor-amarelo: #FEC700;
+    --cor-verde: #39B5B5;
     --cor-laranja: #FF7F1F;
     --cor-roxo: #B00A8C;
-    --cor-rosa: #C92349;
+    --cor-rosa: #f12d6e;
   }
 
 #amarelo{background-color: var(--cor-amarelo);}
-#laranja{background-color: var(--cor-laranja);}
-#roxo{background-color: var(--cor-roxo);}
+#laranja{background-color: var(--cor-verde);}
+#roxo{background-color: var(--cor-laranja);}
 #rosa{background-color: var(--cor-rosa);}
 
 /*CSS do HTML*/
@@ -52,6 +53,50 @@ div.bolinha-tipo-2{
     border-radius: 30%;
     margin: 0.2rem;
 }
+
+img.imagem-reportagem{
+    width: 25rem;
+    height: 20rem;
+    object-fit: cover; /* Esta propriedade preserva a proporção da imagem */
+    border-radius: 10px;
+}
+
+div.filtro{
+    width: 10rem;
+    height: 2rem;
+    border: 2px solid black;
+    margin: 2rem;
+    align-items: center;
+}
+
+.fonte-veiculo{
+    width: 20rem;
+    margin: 2rem 0rem 0rem 0rem;
+    padding: 1rem 0rem;
+    font-style: italic;
+    border-bottom: 1px solid black;
+}
+
+.fonte-titulo-reportagem{
+    font-size: 1.3rem;
+    width: 25rem;
+    font-weight: 600;
+    padding: 15px 0px;
+    line-height: 1.9rem;
+}
+
+.fonte-contem{
+    font-size: 1rem;
+    width: 25rem;
+    font-weight: 600;
+}
+
+a.texto-link{
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px dotted black;
+}
+
 
 /*CSS do Header*/
 header{
@@ -114,3 +159,67 @@ div.div-exemplo-bolinha-legenda{
     align-items: center; /*para alinhar o centro do quadrado com a descrição*/
     margin: 0rem 2rem 0rem 2rem;
 }
+
+
+/*CSS do item de reportagem*/
+
+section.materias-conteudo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10rem 0rem 2rem 0rem;
+}
+
+div.container-reportagens{
+    display: flex;
+    flex-direction: row;
+}
+
+.item{
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+
+    margin: 2rem;
+}
+
+.container-bolinha-tipo-2{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+
+
+div.bolinha-tipo-2 {
+    position: relative;
+    transition: transform 0.3s ease; /* Define uma transição suave de 0.3 segundos */
+  }
+
+div.bolinha-tipo-2:hover{
+    cursor: pointer;
+  }
+
+div.bolinha-tipo-2::before {
+    position: absolute;
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    border: 0.1rem dotted black;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -120%); /*valor x e do y*/
+    content: attr(data-conteudo);
+    display: block;
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    white-space: nowrap;
+    transition: transform 0.4s ease;
+    opacity: 0;
+
+  }
+  
+  div.bolinha-tipo-2:hover::before {
+    opacity: 1;
+    
+  }
