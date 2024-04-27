@@ -23,8 +23,28 @@
 html{
     background-color: white;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 62.5%; /*a cada 1 rem, será considerado 10px*/
 }
 
+
+/*CSS para textos*/
+.texto-legenda{
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid black;
+    width: 10rem;
+}
+
+.texto-bolinha{
+    font-size: 1.37rem;
+}
+
+div.bolinha{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 30%;
+    margin: 0.5rem;
+}
 
 /*CSS do Header*/
 header{
@@ -47,19 +67,40 @@ div.header-conteudo{
 
 .titulo{
     font-weight: 600;
-    font-size: 1.6rem;
-    border-bottom: 2px solid black;
+    font-size: 2.6rem;
+    border-bottom: 0.2rem solid black;
+    margin-bottom: 1rem;
 }
 
 .intertitulo-header {
-    color: black;
     margin: 1rem;
     padding: 0.5rem;
     font-style: italic;
-    font-size: 1.0rem;
+    font-size: 1.35rem;
     margin-bottom: 5rem;
     width: 40%;
-    line-height: 1.4rem;
+    line-height: 1.9rem;
     text-align: center;
-    color: #000;
+}
+
+/*CSS da Legenda*/
+
+section.section-legenda{
+    display: flex;
+    flex-direction: column;
+}
+
+div.div-conteudo-legenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+div.tipo-legenda{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /*para alinhar o centro do quadrado com a descrição*/
+    align-items: center; /*para alinhar o centro do quadrado com a descrição*/
+    margin: 0rem 2rem 0rem 2rem;
 }
