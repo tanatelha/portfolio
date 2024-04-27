@@ -46,6 +46,13 @@ div.bolinha{
     margin: 0.5rem;
 }
 
+div.bolinha-tipo-2{
+    width: 1.6rem;
+    height: 1.7rem;
+    border-radius: 30%;
+    margin: 0.2rem;
+}
+
 /*CSS do Header*/
 header{
     position: relative;
@@ -90,14 +97,17 @@ section.section-legenda{
     flex-direction: column;
 }
 
-div.div-conteudo-legenda{
+div.div-conteudo-legenda,
+div.div-legenda-como-ler{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2rem;
 }
 
-div.tipo-legenda{
+div.tipo-legenda,
+div.div-exemplo-bolinha-legenda{
     display: flex;
     flex-direction: row;
     justify-content: center; /*para alinhar o centro do quadrado com a descrição*/
